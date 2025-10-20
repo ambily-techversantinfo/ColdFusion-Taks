@@ -1,0 +1,513 @@
+body {
+    background-color: #6bb314ff; /* green background */
+    font-size: small;
+    font-family: "Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    width: 500px;
+    position: relative;
+    margin: 20px auto;
+}
+
+/* Logo inside the form */
+.logo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+#logo img {
+    height: 60px;
+    width: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #27ae60;
+    margin-top: 70px; /* space below the logo */
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+/* Submit button (left aligned, gray, small) */
+input[type="submit"] {
+    background-color: #7f8c8d; /* gray */
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-block; /* only take needed width */
+}
+
+input[type="submit"]:hover {
+    background-color: #6c7a7a; /* darker gray on hover */
+}
+
+#logo {
+    margin: -40px;
+    padding: 20px;
+    min-height: 0;
+    background-color: #dedede;
+    text-decoration: none;
+    
+}
+
+#logo {
+    background-image: none;
+    background-color: #99cc00;
+}
+
+#logo {
+    background-image: none;
+    background-color: #99cc00;
+}
+
+.info h2 {
+    font-size: 160% !important;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000 !important;
+    text-align: left;
+}
+
+.info div{
+    font-size: 80% !important;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000 !important;
+    text-align: left;
+}
+
+.dotted-line {
+    border: none;           /* remove default border */
+    border-top: 1px dotted #7f8c8d; /* gray dotted line */
+    margin: 10px 0;         /* spacing above and below */
+}
+
+.formClass label{
+    font-size: 95% !important;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    color: #444444 !important;
+}
+
+.form-field {
+    margin-bottom: 8px;
+    padding: 2px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* When input inside is focused, change parent div background */
+.form-field input:focus,
+.form-field textarea:focus,
+.form-field select:focus {
+    outline: none;
+}
+
+.form-field input:focus::placeholder,
+.form-field textarea:focus::placeholder {
+    color: #999;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;          /* full width or 50% for half-width select */
+    padding: 5px 8px;     /* less padding to reduce height */
+    margin-bottom: 15px;
+    border-radius: 2px;    /* slightly rounded or 0 for sharp rectangle */
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    height: 24px;          /* compact height */
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+/* For textarea, adjust height separately */
+textarea {
+    height: 60px;          /* smaller height */
+    padding: 5px 8px;
+}
+
+/* Half-width select */
+.half-width select {
+    width: 50%;            /* half of form width */
+    height: 28px;
+    padding: 5px 8px;
+    border-radius: 2px;
+}
+
+form span.req {
+    display: inline;
+    float: none;
+    color: red !important;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.radio-group label {
+    display: block; /* stack vertically */
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 8px; /* space between radio and text */
+}
+
+.date-container input[type="date"] {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+
+/*----------------*/
+
+.date-separator {
+    font-size: 22px;      /* increase the size of slash */
+    line-height: 31px;    /* align vertically with input boxes */
+    color: #000;          /* optional color */
+    margin: 0 2px;        /* optional spacing between inputs and slash */
+}
+
+.date-container {
+    display: flex;
+    align-items: flex-start; /* align top of icon with boxes */
+    gap: 5px;
+    padding-top: 8px;
+    padding-left: 10px;
+}
+
+.date-boxes {
+    display: flex;
+    gap: 4px;
+}
+
+.date-input {
+    display: flex;
+    flex-direction: column; /* stack input and label vertically */
+    align-items: center;
+}
+
+#txt3 {
+    width: 50px !important;
+    padding: 5px;
+    text-align: center;
+}
+
+.date-input input[type="text"] {
+    width: 30px;
+    padding: 5px;
+    text-align: center;
+}
+
+.date-label {
+    font-size: 12px;
+    color: #555;
+    margin-top: 0; /* remove extra space */
+    line-height: 1; /* tight line spacing */
+}
+
+#calendarIcon {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    margin-top:3px; /* align vertically with inputs */
+    position: relative;
+    z-index: 1;
+    border: none;
+    vertical-align: top;
+}
+
+#hiddenDate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2; /* over the icon */
+}
+
+.instruct small {
+    font-size: 80%;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    color: #444444;
+}
+
+.currency-symbol,
+.dot-separator {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    height: 28px; /* same as text box height */
+}
+
+
+.salary-container {
+    display: flex;
+    gap: 4px; /* space between dollars and cents */
+}
+
+
+.salary-input {
+    display: flex;
+    flex-direction: column; /* stack input and label vertically */
+    align-items: flex-start;;
+}
+
+.salary-input input[type="text"] {
+    width: 80px; /* adjust as needed */
+    padding: 5px;
+    text-align: center;
+    margin: 0;
+    height: 28px; /* compact height */
+    border-radius: 2px;
+    border: 1px solid #ccc;
+}
+
+#salaryCents {
+    width: 30px;
+}
+
+.salary-label {
+    font-size: 12px;
+    color: #555;
+    margin-top: 0; /* no extra space */
+    line-height: 1;
+    text-align: left;
+}
+
+.section h3 {
+    font-size: 110% !important;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000 !important;
+}
+
+#firstName {
+    width: 60px;
+}
+
+
+/* Change border color to blue on focus */
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #0b488a; /* blue */
+    border-width: 2px;
+}
+
+input.text:not([disabled]), input.search, textarea.textarea
+ {
+    border-top: 1px solid #7c7c7c;
+    border-left: 1px solid #c3c3c3;
+    border-right: 1px solid #c3c3c3;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+}
+
+#first3,
+#next3 {
+    width: 25px;
+}
+
+#final4{
+    width: 40px;
+}
+
+select {
+    background-color: white !important;
+    background: white !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #ccc;
+    box-shadow: none !important;
+    outline: none;
+}
+
+/************Error Message ****************/
+
+#errorMsg {
+    margin: 0 0 2px 0;
+    color: #000 !important;
+    font-size: 100%;
+}
+
+#errorMsgLbl {
+    margin: 0 0 5px 0;
+    padding: 0;
+    font-size: 125%;
+    color: #DF0000 !important;
+}
+
+#errorLi, .error-container {
+    width: 99%;
+    margin: 15px auto 15px auto;
+    background: #fff !important;
+    border: 1px solid red;
+    text-align: center;
+    padding: 1em 0 1em 0;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+#errorMsg b {
+    padding: 2px 8px;
+    background-color: #FFDFDF !important;
+    color: red !important;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+p.error {
+    display: none;
+    margin: 0 !important;
+    padding: 0 0 0 0 !important;
+    line-height: 10px !important;
+    font-weight: bold;
+    font-size: 11px;
+    color: #DF0000 !important;
+    clear: both;
+}
+
+
+/************Error Message ****************/
+
+#hidden-datepicker {
+    width: 0;
+    height: 0;
+    padding: 0;
+    border: none;
+    position: absolute;
+    /* Position it near your button */
+}
+
+.datepicker
+{
+    float: left;
+    margin: .19em 5px 0 0;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    cursor: pointer !important;
+}
+
+#calendar-trigger {
+    cursor: pointer; 
+    border: none; 
+    background: none; 
+    vertical-align: middle;
+}
+
+/*******Calender************** */
+.ui-datepicker td {
+    border: none !important;
+}
+
+.ui-datepicker td a {
+    border: none !important;
+}
+
+.ui-datepicker,
+.ui-datepicker table {
+    border: none !important;
+}
+
+.ui-datepicker td {
+    padding: 0; 
+}
+
+.ui-datepicker td a {
+    padding: 3px 5px !important;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.ui-datepicker .ui-datepicker-header {
+    background: none !important;
+    border: none !important;
+    color: #333 !important;
+}
+
+.ui-datepicker th {
+    border: none !important; 
+    padding: .2em .3em; 
+}
+
+.ui-datepicker td a.ui-state-default {
+    background: none !important;
+    background-color: transparent !important;
+}
+
+.ui-datepicker td a.ui-state-hover,
+.ui-datepicker td a.ui-state-focus {
+    background: none !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.ui-datepicker .ui-datepicker-today a.ui-state-highlight {
+    background: none !important;
+    font-weight: bold;
+}
+
+.ui-datepicker .ui-datepicker-current-day a.ui-state-active {
+    background: #e0e0e0 !important;
+    color: #333333 !important;
+    border: none !important; 
+}
+
+
+
+/* ************************ */
