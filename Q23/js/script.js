@@ -3,7 +3,7 @@ document.querySelectorAll('.form-field input[type="text"], .form-field textarea,
         this.parentElement.style.backgroundColor = '#ffff99'; // yellow
     });
     field.addEventListener('blur', function() {
-        this.parentElement.style.backgroundColor = ''; // reset
+        this.parentElement.style.backgroundColor = '';
     });
 });
 
@@ -153,6 +153,8 @@ function validateForm()
         $("#errorLi").show();
         return false;
     }
+
+    return true;
 }
 
 function isValidUrl(website) 

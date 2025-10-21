@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
 </head>
 <body>
-
     <div class="form-container">
         <div id="logo">
 		    <img src="images/wufoo-logo.png" alt="Company Logo">
@@ -26,7 +25,7 @@
 			</p>
 	    </div>
 
-        <form action="submitform.cfc" method="post" class="formClass" onsubmit="return validateForm()">
+        <form action="submitForm.cfm" enctype="multipart/form-data" method="post" class="formClass" onsubmit="return validateForm()">
             <div class="form-field half-width">
                 <label for="department" class="errorLabel_department">
                     Which position are you applying for? 
@@ -59,17 +58,17 @@
                 <div class="date-container">
                     <div class="date-boxes">
                         <div class="date-input">
-                            <input type="text" id="txt1" maxlength="2">
+                            <input type="text" id="txt1" name="month" maxlength="2">
                             <div class="date-label">MM</div>
                         </div>
                         <span class="date-separator">/</span>
                         <div class="date-input">
-                            <input type="text" id="txt2" maxlength="2">
+                            <input type="text" id="txt2" name="date" maxlength="2">
                             <div class="date-label">DD</div>
                         </div>
                         <span class="date-separator">/</span>
                         <div class="date-input">
-                            <input type="text" id="txt3" maxlength="4">
+                            <input type="text" id="txt3" name="year" maxlength="4">
                             <div class="date-label">YYYY</div>
                         </div>
                     </div>
@@ -176,13 +175,12 @@
                 <p class="error err_phone">Please enter a valid phone number.</p>
             </div>
 
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" name="submit">
         </form>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
     <script src="js/script.js"></script>
-
 </body>
 </html>

@@ -1,0 +1,32 @@
+input {
+    margin-bottom: 15px;
+    width: 10%;
+    padding: 8px;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    padding-left: 10px;
+    margin-left: 60px;
+}
+
+.formClass {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    min-width: 300px;
+}
+
+.redText { color: rgba(235, 55, 55, 0.93)}
+
+.greenText { color: rgba(55, 175, 19, 0.89) }
+
+.orangeText { color: rgba(247, 119, 15, 0.89) }
+
+.yellowText { color: rgba(238, 224, 27, 0.94) }
+
+.boldBlackText { color: rgba(0, 0, 0, 1); font-weight: bold; }
+
+.blueText { color: rgba(21, 10, 179, 1) }
+
+.boldRedText { color: rgba(248, 5, 5, 0.93) ; font-weight: bold; }
