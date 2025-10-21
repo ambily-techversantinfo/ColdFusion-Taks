@@ -1,0 +1,7 @@
+|COLUMN_NAME |DATA_TYPE|CHARACTER_MAXIMUM_LENGTH|NUMERIC_PRECISION|NUMERIC_SCALE|IS_NULLABLE|
+|------------|---------|------------------------|-----------------|-------------|-----------|
+|id          |int      |                        |10               |0            |NO         |
+|filename    |varchar  |255                     |                 |             |NO         |
+|description |text     |2,147,483,647           |                 |             |YES        |
+|filepath    |varchar  |500                     |                 |             |NO         |
+|tempfilepath|varchar  |500                     |                 |             |YES        |
