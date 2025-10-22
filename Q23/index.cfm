@@ -46,13 +46,13 @@
                     <span id="req_17" class="req">*</span>
                 </label>
                 <div class="radio-group">
-                    <label><input type="radio" name="relocate" value="male" checked> Yes</label>
-                    <label><input type="radio" name="relocate" value="female"> No</label>
+                    <label><input type="radio" name="relocate" value="yes" checked> Yes</label>
+                    <label><input type="radio" name="relocate" value="no"> No</label>
                 </div>
             </div>
 
             <div class="form-field">
-                <label for="start_date" class="errorLabel">When can you start?
+                <label for="start_date" class="errorLabel_startDate">When can you start?
                         <span id="req_17" class="req">*
                 </label>
                 <div class="date-container">
@@ -81,6 +81,7 @@
                     <!-- Hidden date input -->
                     <input type="text" id="hidden-datepicker" class="datepicker">
                 </div>
+                <p class="error err_startDate">This field is required. Please enter a value.</p>
             </div>
 
             <div class="form-field">

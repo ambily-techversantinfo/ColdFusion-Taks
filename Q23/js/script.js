@@ -58,6 +58,9 @@ function validateForm()
     const first3 = document.getElementById("first3").value.trim();
     const next3 = document.getElementById("next3").value.trim();
     const final4 = document.getElementById("final4").value.trim();
+    const month = document.getElementById("txt1").value.trim();
+    const date = document.getElementById("txt2").value.trim();
+    const year = document.getElementById("txt3").value.trim();
     let errorList = 0;
 
     if (department === "") {
@@ -75,6 +78,14 @@ function validateForm()
             errorList = 1;
         }
     }
+
+    if (month === "" || date === "" || year === "") {
+        $("#txt1").closest('.form-field').css('backgroundColor', '#FFDFDF');
+        $(".errorLabel_startDate").css('color', '#DF0000');
+        $(".err_startDate").show();
+        errorList = 1;
+    }
+
 
     if (typeof file !== "undefined") {
         const validTypes = [
