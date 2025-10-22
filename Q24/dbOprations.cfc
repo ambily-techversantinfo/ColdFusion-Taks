@@ -2,7 +2,8 @@
     <cffunction name="checkEmail" access="remote" returntype="struct" output="false" httpmethod="post" returnFormat="json">
         <cfargument name="email" type="string" required="true">
 
-        <cfset result = {"exists" = false }>
+        <cfset result = structNew()>
+        <cfset result.emailExists = false>
 
         <cfquery datasource="myMSSQLDB" name="emailCheck">
             SELECT COUNT(*) as total
@@ -11,7 +12,7 @@
         </cfquery>
 
         <cfif emailCheck.total GT 0>
-            <cfset result.exists = true>
+            <cfset result.emailExists = true>
         </cfif>
 
         <cfreturn result>

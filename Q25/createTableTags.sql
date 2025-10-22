@@ -1,0 +1,3 @@
+CREATE TABLE tags (
+    tags NVARCHAR(50) NOT NULL
+);
