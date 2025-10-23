@@ -30,3 +30,28 @@ input[type="submit"] {
 .blueText { color: rgba(21, 10, 179, 1) }
 
 .boldRedText { color: rgba(248, 5, 5, 0.93) ; font-weight: bold; }
+
+a.logout-btn {
+    text-decoration: none;
+    color: #2575fc;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+a.logout-btn:hover {
+    background-color: #2575fc;
+    color: #fff;
+}
+
+.welcome-container {
+    text-align: center;
+    background: rgba(200, 211, 55, 0.5);
+    padding: 50px;
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 3em;
+}
